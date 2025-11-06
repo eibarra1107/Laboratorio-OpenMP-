@@ -27,6 +27,11 @@
 -lab04_threads.c — Control del equipo de hilos
  Acepta N por CLI (./lab04_threads N) y ajusta hilos con omp_set_num_threads.
  Muestra el máximo reportado y el número real de hilos en la región.
+## ❓ Preguntas frecuentes
+¿OpenMP vs Pthreads?
+OpenMP ofrece alto nivel (pragmas) y paralelización rápida; Pthreads da control fino pero con más código y complejidad.
+¿private vs firstprivate?
+private no inicializa con el valor externo; firstprivate sí copia el valor inicial a cada hilo.
 
 -sum_sin.c — Reducción paralela con cronometraje
  Calcula Σ sin(a + k) (con a=50) usando #pragma omp for reduction(+:sum).
